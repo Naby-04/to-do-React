@@ -66,6 +66,9 @@ class App extends React.Component {
     localStorage.setItem("tasks", JSON.stringify(updatetableau));
     // ----------------
     this.setState({ submitType: this.handleSubmit });
+    this.setState({ icone: "fa-solid fa-plus" });
+    this.setState({ background: "btn btn-active" });
+
     console.table(this.state.tasks);
   };
   handleDelete = (index) => {
@@ -75,7 +78,7 @@ class App extends React.Component {
     );
     // et maintenant nous allos mettre a jour le local storage
     // rappel : pour mettre a jour un state on utilise setState()
-    this.setState({ tasks: tableauFiltre }, () => {
+    this.setState({ tasks: tableauFiltre, task: "" }, () => {
       localStorage.setItem("tasks", JSON.stringify(tableauFiltre));
     });
     this.setState({ icone: "fa-solid fa-plus" });
