@@ -103,19 +103,18 @@ td {
   padding: 8px;
   text-align: center;
 }
-thead th:last-of-type {
+/* thead th:last-of-type {
   border-right: 1px solid var(--secondary-color) !important;
-}
+} */
 td {
   border-top: 1px solid var(--secondary-color) !important;
   color: var(--text-white);
-  max-width: 300px;
   overflow: scroll;
 }
-td:nth-child(2) {
+/* td:nth-child(2) {
   border-left: 1px solid var(--secondary-color) !important;
   border-right: 1px solid var(--secondary-color) !important;
-}
+} */
 
 tbody tr:hover {
   background: var(--primary-color) !important;
@@ -125,4 +124,8 @@ tbody tr:hover {
 .btn-active {
   width: fit-content !important;
   background: var(--secondary-color) !important;
+}
+.btn-desactive {
+  width: fit-content !important;
+  background: green !important;
 }
