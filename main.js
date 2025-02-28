@@ -1,4 +1,4 @@
-const { useState, useEffect } = React; // Importer les hooks de React
+const { useState } = React; // Importer les hooks de React
 
 class App extends React.Component {
   constructor(props) {
